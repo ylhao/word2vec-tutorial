@@ -56,6 +56,8 @@ def get_byte_files(exe_path, byte_path):
     files = os.listdir(exe_path)
     p = Pool(MAX_PROCESS_NUM)  # windows 下必须放在 “if __name__ == '__main__':” 后面，否则会报错
     for file in files:
+        if os.path.exists(os.path.join(byte_path, file + '.txt')):  # 跳过已有的文件
+            continue
         exe_file = os.path.join(exe_path, file)
         byte_file = os.path.join(byte_path, file + '.txt')
         p.apply_async(exe_to_bytes, args=(exe_file, byte_file,))

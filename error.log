@@ -1,0 +1,3 @@
+OSError: cannot identify image file './data/train/malware/Trojan.BAT.Adduser.e.png'
+解决方案：删除这张图片即可。一个样例不会对数据集产生多大影响。
+

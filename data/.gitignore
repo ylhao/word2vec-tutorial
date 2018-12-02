@@ -1,2 +1,4 @@
-train/*.png
-test/*.png
+train/
+valid/
+test/
+

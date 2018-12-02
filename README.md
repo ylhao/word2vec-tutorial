@@ -4,6 +4,9 @@
 
 - add_prefix.py: 给文件添加你前缀
 - exe_to_bytes.py: exe 文件转字节码序列
+- split_data.py: 划分数据集
+- exe_to_img.py: exe 文件转图片
+
 
 ## 文章
 
