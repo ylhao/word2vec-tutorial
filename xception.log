@@ -1,0 +1,172 @@
+Using TensorFlow backend.
+Found 17002 images belonging to 2 classes.
+Found 3751 images belonging to 2 classes.
+2018-12-05 04:55:41.198420: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary ws not compiled to use: AVX2 FMA
+2018-12-05 04:55:42.469960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties:
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:02:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-12-05 04:55:42.661609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 1 with properties:
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.683
+pciBusID: 0000:83:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-12-05 04:55:42.663114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0, 1
+2018-12-05 04:55:43.758481: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge mtrix:
+2018-12-05 04:55:43.759085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 1
+2018-12-05 04:55:43.759431: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N N
+2018-12-05 04:55:43.759759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 1:   N N
+2018-12-05 04:55:43.760892: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task0/device:GPU:0 with 10407 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1
+2018-12-05 04:55:44.038191: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task0/device:GPU:1 with 10407 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1
+1: input_1
+2: lambda_1
+3: block1_conv1
+4: block1_conv1_bn
+5: block1_conv1_act
+6: block1_conv2
+7: block1_conv2_bn
+8: block1_conv2_act
+9: block2_sepconv1
+10: block2_sepconv1_bn
+11: block2_sepconv2_act
+12: block2_sepconv2
+13: block2_sepconv2_bn
+14: conv2d_1
+15: block2_pool
+16: batch_normalization_1
+17: add_1
+18: block3_sepconv1_act
+19: block3_sepconv1
+20: block3_sepconv1_bn
+21: block3_sepconv2_act
+22: block3_sepconv2
+23: block3_sepconv2_bn
+24: conv2d_2
+25: block3_pool
+26: batch_normalization_2
+27: add_2
+28: block4_sepconv1_act
+29: block4_sepconv1
+30: block4_sepconv1_bn
+31: block4_sepconv2_act
+32: block4_sepconv2
+33: block4_sepconv2_bn
+34: conv2d_3
+35: block4_pool
+36: batch_normalization_3
+37: add_3
+38: block5_sepconv1_act
+39: block5_sepconv1
+40: block5_sepconv1_bn
+41: block5_sepconv2_act
+42: block5_sepconv2
+43: block5_sepconv2_bn
+44: block5_sepconv3_act
+45: block5_sepconv3
+46: block5_sepconv3_bn
+47: add_4
+48: block6_sepconv1_act
+49: block6_sepconv1
+50: block6_sepconv1_bn
+51: block6_sepconv2_act
+52: block6_sepconv2
+53: block6_sepconv2_bn
+54: block6_sepconv3_act
+55: block6_sepconv3
+56: block6_sepconv3_bn
+57: add_5
+58: block7_sepconv1_act
+59: block7_sepconv1
+60: block7_sepconv1_bn
+61: block7_sepconv2_act
+62: block7_sepconv2
+63: block7_sepconv2_bn
+64: block7_sepconv3_act
+65: block7_sepconv3
+66: block7_sepconv3_bn
+67: add_6
+68: block8_sepconv1_act
+69: block8_sepconv1
+70: block8_sepconv1_bn
+71: block8_sepconv2_act
+72: block8_sepconv2
+73: block8_sepconv2_bn
+74: block8_sepconv3_act
+75: block8_sepconv3
+76: block8_sepconv3_bn
+77: add_7
+78: block9_sepconv1_act
+79: block9_sepconv1
+80: block9_sepconv1_bn
+81: block9_sepconv2_act
+82: block9_sepconv2
+83: block9_sepconv2_bn
+84: block9_sepconv3_act
+85: block9_sepconv3
+86: block9_sepconv3_bn
+87: add_8
+88: block10_sepconv1_act
+89: block10_sepconv1
+90: block10_sepconv1_bn
+91: block10_sepconv2_act
+92: block10_sepconv2
+93: block10_sepconv2_bn
+94: block10_sepconv3_act
+95: block10_sepconv3
+96: block10_sepconv3_bn
+97: add_9
+98: block11_sepconv1_act
+99: block11_sepconv1
+100: block11_sepconv1_bn
+101: block11_sepconv2_act
+102: block11_sepconv2
+103: block11_sepconv2_bn
+104: block11_sepconv3_act
+105: block11_sepconv3
+106: block11_sepconv3_bn
+107: add_10
+108: block12_sepconv1_act
+109: block12_sepconv1
+110: block12_sepconv1_bn
+111: block12_sepconv2_act
+112: block12_sepconv2
+113: block12_sepconv2_bn
+114: block12_sepconv3_act
+115: block12_sepconv3
+116: block12_sepconv3_bn
+117: add_11
+118: block13_sepconv1_act
+119: block13_sepconv1
+120: block13_sepconv1_bn
+121: block13_sepconv2_act
+122: block13_sepconv2
+123: block13_sepconv2_bn
+124: conv2d_4
+125: block13_pool
+126: batch_normalization_4
+127: add_12
+128: block14_sepconv1
+129: block14_sepconv1_bn
+130: block14_sepconv1_act
+131: block14_sepconv2
+132: block14_sepconv2_bn
+133: block14_sepconv2_act
+134: my_global_average_pooling_layer_1
+135: my_dropout_layer_1
+136: my_dense_layer_1
+Epoch 1/10
+531/531 [==============================] - 493s 928ms/step - loss: 0.2310 - acc: 0.9118 - val_loss: 0.3514 - val_acc: 0.8592
+
+Epoch 00001: val_loss improved from inf to 0.35144, saving model to ./model/xception-finetune.hdf5
+Epoch 2/10
+531/531 [==============================] - 477s 898ms/step - loss: 0.1040 - acc: 0.9632 - val_loss: 0.3652 - val_acc: 0.8481
+
+Epoch 00002: val_loss did not improve from 0.35144
+Epoch 3/10
+531/531 [==============================] - 479s 902ms/step - loss: 0.0567 - acc: 0.9800 - val_loss: 0.3775 - val_acc: 0.8362
+
+Epoch 00003: val_loss did not improve from 0.35144
+Epoch 4/10
+531/531 [==============================] - 478s 900ms/step - loss: 0.0352 - acc: 0.9883 - val_loss: 0.6512 - val_acc: 0.7085
+
+Epoch 00004: val_loss did not improve from 0.35144
+
