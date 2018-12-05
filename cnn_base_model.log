@@ -1,0 +1,73 @@
+Using TensorFlow backend.
+Found 17002 images belonging to 2 classes.
+Found 3751 images belonging to 2 classes.
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+input_1 (InputLayer)         (None, 512, 512, 3)       0
+_________________________________________________________________
+Conv2D_1 (Conv2D)            (None, 510, 510, 32)      896
+_________________________________________________________________
+MaxPooling2D_1 (MaxPooling2D (None, 255, 255, 32)      0
+_________________________________________________________________
+Dropout_1 (Dropout)          (None, 255, 255, 32)      0
+_________________________________________________________________
+Conv2D_2 (Conv2D)            (None, 253, 253, 256)     73984
+_________________________________________________________________
+MaxPooling2D_2 (MaxPooling2D (None, 126, 126, 256)     0
+_________________________________________________________________
+Dropout_2 (Dropout)          (None, 126, 126, 256)     0
+_________________________________________________________________
+GlobalAveragePooling2D_1 (Gl (None, 256)               0
+_________________________________________________________________
+Dropout_3 (Dropout)          (None, 256)               0
+_________________________________________________________________
+Dense_1 (Dense)              (None, 2)                 514
+=================================================================
+Total params: 75,394
+Trainable params: 75,394
+Non-trainable params: 0
+_________________________________________________________________
+/home/yilonghao/ml/venv/lib/python3.5/site-packages/keras/callbacks.py:1065: UserWarning: `epsilon` argument is deprecate                                    d and will be removed, use `min_delta` instead.
+  warnings.warn('`epsilon` argument is deprecated and '
+  Epoch 1/10
+  2018-12-05 01:18:53.704971: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this                                     TensorFlow binary was not compiled to use: AVX2 FMA
+  2018-12-05 01:18:55.253667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties:
+  name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+  pciBusID: 0000:02:00.0
+  totalMemory: 10.92GiB freeMemory: 10.76GiB
+  2018-12-05 01:18:55.598312: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 1 with properties:
+  name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.683
+  pciBusID: 0000:83:00.0
+  totalMemory: 10.92GiB freeMemory: 10.76GiB
+  2018-12-05 01:18:55.598411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0, 1
+  2018-12-05 01:18:57.762848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor wi                                    th strength 1 edge matrix:
+  2018-12-05 01:18:57.763421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 1
+  2018-12-05 01:18:57.763754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N N
+  2018-12-05 01:18:57.764116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 1:   N N
+  2018-12-05 01:18:57.765198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:loca                                    lhost/replica:0/task:0/device:GPU:0 with 10407 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus                                     id: 0000:02:00.0, compute capability: 6.1)
+  2018-12-05 01:18:58.127839: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:loca                                    lhost/replica:0/task:0/device:GPU:1 with 10407 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus                                     id: 0000:83:00.0, compute capability: 6.1)
+  531/531 [==============================] - 341s 642ms/step - loss: 3.2057 - acc: 0                                                                           .7154 - val_loss: 1.4282 - val_acc: 0.7970
+
+  Epoch 00001: val_loss improved from inf to 1.42825, saving model to ./model/cnn_ba                                                                           se_model.hdf5
+  Epoch 2/10
+  531/531 [==============================] - 337s 635ms/step - loss: 1.3157 - acc: 0.7666 - val_loss: 0.5998 - val_acc: 0.6                                    405
+
+  Epoch 00002: val_loss improved from 1.42825 to 0.59980, saving model to ./model/cnn_base_model.hdf5
+  Epoch 3/10
+  531/531 [==============================] - 339s 639ms/step - loss: 0.4920 - acc: 0.7858 - val_loss: 0.5444 - val_acc: 0.8                                    209
+
+  Epoch 00003: val_loss improved from 0.59980 to 0.54444, saving model to ./model/cnn_base_model.hdf5
+  Epoch 4/10
+  531/531 [==============================] - 336s 633ms/step - loss: 0.4344 - acc: 0.8081 - val_loss: 0.5591 - val_acc: 0.8                                    352
+
+  Epoch 00004: val_loss did not improve from 0.54444
+  Epoch 5/10
+  531/531 [==============================] - 337s 634ms/step - loss: 0.4200 - acc: 0.8180 - val_loss: 0.5525 - val_acc: 0.8                                    430
+
+  Epoch 00005: val_loss did not improve from 0.54444
+  Epoch 6/10
+  531/531 [==============================] - 337s 634ms/step - loss: 0.4131 - acc: 0.8204 - val_loss: 0.5525 - val_acc: 0.8                                    258
+
+  Epoch 00006: val_loss did not improve from 0.54444
+

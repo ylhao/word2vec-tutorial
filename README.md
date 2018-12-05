@@ -20,3 +20,7 @@
 - [恶意软件分析大合集](https://github.com/rshipp/awesome-malware-analysis/blob/master/%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%A4%A7%E5%90%88%E9%9B%86.md)
 - [EMBER](https://github.com/endgameinc/ember)
 
+
+## 文件
+
+- error.log: 记录了所有编程过程中出现了问题

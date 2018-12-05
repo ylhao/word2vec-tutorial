@@ -1,0 +1,230 @@
+
+Using TensorFlow backend.
+Found 17002 images belonging to 2 classes.
+Found 3751 images belonging to 2 classes.
+2018-12-05 03:25:13.862242: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary   was not compiled to use: AVX2 FMA
+2018-12-05 03:25:15.166256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties:
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:02:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-12-05 03:25:15.354023: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 1 with properties:
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.683
+pciBusID: 0000:83:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-12-05 03:25:15.355426: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0, 1
+2018-12-05 03:25:16.342114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge   matrix:
+2018-12-05 03:25:16.342436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 1
+2018-12-05 03:25:16.342602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N N
+2018-12-05 03:25:16.342763: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 1:   N N
+2018-12-05 03:25:16.343680: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/tas  k:0/device:GPU:0 with 10407 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability:   6.1)
+2018-12-05 03:25:16.597241: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/tas  k:0/device:GPU:1 with 10407 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability:   6.1)
+/home/yilonghao/ml/venv/lib/python3.5/site-packages/keras_applications/resnet50.py:265: UserWarning: The output shape of `ResNet50(include_t  op=False)` has been changed since Keras 2.2.0.
+  warnings.warn('The output shape of `ResNet50(include_top=False)` '
+  1: input_1
+  2: lambda_1
+  3: conv1_pad
+  4: conv1
+  5: bn_conv1
+  6: activation_1
+  7: pool1_pad
+  8: max_pooling2d_1
+  9: res2a_branch2a
+  10: bn2a_branch2a
+  11: activation_2
+  12: res2a_branch2b
+  13: bn2a_branch2b
+  14: activation_3
+  15: res2a_branch2c
+  16: res2a_branch1
+  17: bn2a_branch2c
+  18: bn2a_branch1
+  19: add_1
+  20: activation_4
+  21: res2b_branch2a
+  22: bn2b_branch2a
+  23: activation_5
+  24: res2b_branch2b
+  25: bn2b_branch2b
+  26: activation_6
+  27: res2b_branch2c
+  28: bn2b_branch2c
+  29: add_2
+  30: activation_7
+  31: res2c_branch2a
+  32: bn2c_branch2a
+  33: activation_8
+  34: res2c_branch2b
+  35: bn2c_branch2b
+  36: activation_9
+  37: res2c_branch2c
+  38: bn2c_branch2c
+  39: add_3
+  40: activation_10
+  41: res3a_branch2a
+  42: bn3a_branch2a
+  43: activation_11
+  44: res3a_branch2b
+  45: bn3a_branch2b
+  46: activation_12
+  47: res3a_branch2c
+  48: res3a_branch1
+  49: bn3a_branch2c
+  50: bn3a_branch1
+  51: add_4
+  52: activation_13
+  53: res3b_branch2a
+  54: bn3b_branch2a
+  55: activation_14
+  56: res3b_branch2b
+  57: bn3b_branch2b
+  58: activation_15
+  59: res3b_branch2c
+  60: bn3b_branch2c
+  61: add_5
+  62: activation_16
+  63: res3c_branch2a
+  64: bn3c_branch2a
+  65: activation_17
+  66: res3c_branch2b
+  67: bn3c_branch2b
+  68: activation_18
+  69: res3c_branch2c
+  70: bn3c_branch2c
+  71: add_6
+  72: activation_19
+  73: res3d_branch2a
+  74: bn3d_branch2a
+  75: activation_20
+  76: res3d_branch2b
+  77: bn3d_branch2b
+  78: activation_21
+  79: res3d_branch2c
+  80: bn3d_branch2c
+  81: add_7
+  82: activation_22
+  83: res4a_branch2a
+  84: bn4a_branch2a
+  85: activation_23
+  86: res4a_branch2b
+  87: bn4a_branch2b
+  88: activation_24
+  89: res4a_branch2c
+  90: res4a_branch1
+  91: bn4a_branch2c
+  92: bn4a_branch1
+  93: add_8
+  94: activation_25
+  95: res4b_branch2a
+  96: bn4b_branch2a
+  97: activation_26
+  98: res4b_branch2b
+  99: bn4b_branch2b
+  100: activation_27
+  101: res4b_branch2c
+  102: bn4b_branch2c
+  103: add_9
+  104: activation_28
+  105: res4c_branch2a
+  106: bn4c_branch2a
+  107: activation_29
+  108: res4c_branch2b
+  109: bn4c_branch2b
+  110: activation_30
+  111: res4c_branch2c
+  112: bn4c_branch2c
+  113: add_10
+  114: activation_31
+  115: res4d_branch2a
+  116: bn4d_branch2a
+  117: activation_32
+  118: res4d_branch2b
+  119: bn4d_branch2b
+  120: activation_33
+  121: res4d_branch2c
+  122: bn4d_branch2c
+  123: add_11
+  124: activation_34
+  125: res4e_branch2a
+  126: bn4e_branch2a
+  127: activation_35
+  128: res4e_branch2b
+  129: bn4e_branch2b
+  130: activation_36
+  131: res4e_branch2c
+  132: bn4e_branch2c
+  133: add_12
+  134: activation_37
+  135: res4f_branch2a
+  136: bn4f_branch2a
+  137: activation_38
+  138: res4f_branch2b
+  139: bn4f_branch2b
+  140: activation_39
+  141: res4f_branch2c
+  142: bn4f_branch2c
+  143: add_13
+  144: activation_40
+  145: res5a_branch2a
+  146: bn5a_branch2a
+  147: activation_41
+  148: res5a_branch2b
+  149: bn5a_branch2b
+  150: activation_42
+  151: res5a_branch2c
+  152: res5a_branch1
+  153: bn5a_branch2c
+  154: bn5a_branch1
+  155: add_14
+  156: activation_43
+  157: res5b_branch2a
+  158: bn5b_branch2a
+  159: activation_44
+  160: res5b_branch2b
+  161: bn5b_branch2b
+  162: activation_45
+  163: res5b_branch2c
+  164: bn5b_branch2c
+  165: add_15
+  166: activation_46
+  167: res5c_branch2a
+  168: bn5c_branch2a
+  169: activation_47
+  170: res5c_branch2b
+  171: bn5c_branch2b
+  172: activation_48
+  173: res5c_branch2c
+  174: bn5c_branch2c
+  175: add_16
+  176: activation_49
+  177: my_global_average_pooling_layer_1
+  178: my_dropout_layer_1
+  179: my_dense_layer_1
+  Epoch 1/10
+  531/531 [==============================] - 449s 845ms/step - loss: 0.2158 - acc: 0.9175 - val_loss: 0.6354 - val_acc: 0.6814
+
+  Epoch 00001: val_loss improved from inf to 0.63537, saving model to ./model/resnet50-finetune.hdf5
+  Epoch 2/10
+  531/531 [==============================] - 431s 812ms/step - loss: 0.1184 - acc: 0.9602 - val_loss: 0.7368 - val_acc: 0.6814
+
+  Epoch 00002: val_loss did not improve from 0.63537
+  Epoch 3/10
+  531/531 [==============================] - 431s 813ms/step - loss: 0.0856 - acc: 0.9710 - val_loss: 0.5344 - val_acc: 0.7558
+
+  Epoch 00003: val_loss improved from 0.63537 to 0.53441, saving model to ./model/resnet50-finetune.hdf5
+  Epoch 4/10
+  531/531 [==============================] - 428s 807ms/step - loss: 0.0575 - acc: 0.9805 - val_loss: 0.4198 - val_acc: 0.8104
+
+  Epoch 00004: val_loss improved from 0.53441 to 0.41975, saving model to ./model/resnet50-finetune.hdf5
+  Epoch 5/10
+  531/531 [==============================] - 429s 808ms/step - loss: 0.0534 - acc: 0.9823 - val_loss: 0.7216 - val_acc: 0.7166
+
+  Epoch 00005: val_loss did not improve from 0.41975
+  Epoch 6/10
+  531/531 [==============================] - 436s 820ms/step - loss: 0.0393 - acc: 0.9858 - val_loss: 0.9976 - val_acc: 0.7007
+
+  Epoch 00006: val_loss did not improve from 0.41975
+  Epoch 7/10
+  531/531 [==============================] - 433s 815ms/step - loss: 0.0280 - acc: 0.9902 - val_loss: 0.6263 - val_acc: 0.7198
+
+  Epoch 00007: val_loss did not improve from 0.41975
+
