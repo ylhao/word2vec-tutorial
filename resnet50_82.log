@@ -1,0 +1,206 @@
+Epoch 00006: val_loss did not improve from 0.28745
+Found 39680 images belonging to 2 classes.
+Found 9921 images belonging to 2 classes.
+/home/yilonghao/ml/venv/lib/python3.5/site-packages/keras_applications/resnet50.py:265: UserWarning: The output shape of `ResNet50(include_top=False)` has been changed since Keras 2.2.0.
+  warnings.warn('The output shape of `ResNet50(include_top=False)` '
+  1: input_2
+  2: lambda_2
+  3: conv1_pad
+  4: conv1
+  5: bn_conv1
+  6: activation_95
+  7: pool1_pad
+  8: max_pooling2d_5
+  9: res2a_branch2a
+  10: bn2a_branch2a
+  11: activation_96
+  12: res2a_branch2b
+  13: bn2a_branch2b
+  14: activation_97
+  15: res2a_branch2c
+  16: res2a_branch1
+  17: bn2a_branch2c
+  18: bn2a_branch1
+  19: add_1
+  20: activation_98
+  21: res2b_branch2a
+  22: bn2b_branch2a
+  23: activation_99
+  24: res2b_branch2b
+  25: bn2b_branch2b
+  26: activation_100
+  27: res2b_branch2c
+  28: bn2b_branch2c
+  29: add_2
+  30: activation_101
+  31: res2c_branch2a
+  32: bn2c_branch2a
+  33: activation_102
+  34: res2c_branch2b
+  35: bn2c_branch2b
+  36: activation_103
+  37: res2c_branch2c
+  38: bn2c_branch2c
+  39: add_3
+  40: activation_104
+  41: res3a_branch2a
+  42: bn3a_branch2a
+  43: activation_105
+  44: res3a_branch2b
+  45: bn3a_branch2b
+  46: activation_106
+  47: res3a_branch2c
+  48: res3a_branch1
+  49: bn3a_branch2c
+  50: bn3a_branch1
+  51: add_4
+  52: activation_107
+  53: res3b_branch2a
+  54: bn3b_branch2a
+  55: activation_108
+  56: res3b_branch2b
+  57: bn3b_branch2b
+  58: activation_109
+  59: res3b_branch2c
+  60: bn3b_branch2c
+  61: add_5
+  62: activation_110
+  63: res3c_branch2a
+  64: bn3c_branch2a
+  65: activation_111
+  66: res3c_branch2b
+  67: bn3c_branch2b
+  68: activation_112
+  69: res3c_branch2c
+  70: bn3c_branch2c
+  71: add_6
+  72: activation_113
+  73: res3d_branch2a
+  74: bn3d_branch2a
+  75: activation_114
+  76: res3d_branch2b
+  77: bn3d_branch2b
+  78: activation_115
+  79: res3d_branch2c
+  80: bn3d_branch2c
+  81: add_7
+  82: activation_116
+  83: res4a_branch2a
+  84: bn4a_branch2a
+  85: activation_117
+  86: res4a_branch2b
+  87: bn4a_branch2b
+  88: activation_118
+  89: res4a_branch2c
+  90: res4a_branch1
+  91: bn4a_branch2c
+  92: bn4a_branch1
+  93: add_8
+  94: activation_119
+  95: res4b_branch2a
+  96: bn4b_branch2a
+  97: activation_120
+  98: res4b_branch2b
+  99: bn4b_branch2b
+  100: activation_121
+  101: res4b_branch2c
+  102: bn4b_branch2c
+  103: add_9
+  104: activation_122
+  105: res4c_branch2a
+  106: bn4c_branch2a
+  107: activation_123
+  108: res4c_branch2b
+  109: bn4c_branch2b
+  110: activation_124
+  111: res4c_branch2c
+  112: bn4c_branch2c
+  113: add_10
+  114: activation_125
+  115: res4d_branch2a
+  116: bn4d_branch2a
+  117: activation_126
+  118: res4d_branch2b
+  119: bn4d_branch2b
+  120: activation_127
+  121: res4d_branch2c
+  122: bn4d_branch2c
+  123: add_11
+  124: activation_128
+  125: res4e_branch2a
+  126: bn4e_branch2a
+  127: activation_129
+  128: res4e_branch2b
+  129: bn4e_branch2b
+  130: activation_130
+  131: res4e_branch2c
+  132: bn4e_branch2c
+  133: add_12
+  134: activation_131
+  135: res4f_branch2a
+  136: bn4f_branch2a
+  137: activation_132
+  138: res4f_branch2b
+  139: bn4f_branch2b
+  140: activation_133
+  141: res4f_branch2c
+  142: bn4f_branch2c
+  143: add_13
+  144: activation_134
+  145: res5a_branch2a
+  146: bn5a_branch2a
+  147: activation_135
+  148: res5a_branch2b
+  149: bn5a_branch2b
+  150: activation_136
+  151: res5a_branch2c
+  152: res5a_branch1
+  153: bn5a_branch2c
+  154: bn5a_branch1
+  155: add_14
+  156: activation_137
+  157: res5b_branch2a
+  158: bn5b_branch2a
+  159: activation_138
+  160: res5b_branch2b
+  161: bn5b_branch2b
+  162: activation_139
+  163: res5b_branch2c
+  164: bn5b_branch2c
+  165: add_15
+  166: activation_140
+  167: res5c_branch2a
+  168: bn5c_branch2a
+  169: activation_141
+  170: res5c_branch2b
+  171: bn5c_branch2b
+  172: activation_142
+  173: res5c_branch2c
+  174: bn5c_branch2c
+  175: add_16
+  176: activation_143
+  177: my_global_average_pooling_layer_1
+  178: my_dropout_layer_1
+  179: my_dense_layer_1
+  Epoch 1/10
+  1240/1240 [==============================] - 1028s 829ms/step - loss: 0.1330 - acc: 0.9539 - val_loss: 0.3934 - val_acc: 0.7937
+
+  Epoch 00001: val_loss improved from inf to 0.39335, saving model to ./model/resnet50-finetune.hdf5
+  Epoch 2/10
+  1240/1240 [==============================] - 1011s 816ms/step - loss: 0.0765 - acc: 0.9744 - val_loss: 0.6330 - val_acc: 0.7205
+
+  Epoch 00002: val_loss did not improve from 0.39335
+  Epoch 3/10
+  1240/1240 [==============================] - 1021s 824ms/step - loss: 0.0518 - acc: 0.9823 - val_loss: 0.2760 - val_acc: 0.9003
+
+  Epoch 00003: val_loss improved from 0.39335 to 0.27595, saving model to ./model/resnet50-finetune.hdf5
+  Epoch 4/10
+  1240/1240 [==============================] - 1010s 814ms/step - loss: 0.0401 - acc: 0.9869 - val_loss: 0.7061 - val_acc: 0.5896
+
+  Epoch 00004: val_loss did not improve from 0.27595
+  Epoch 5/10
+  1240/1240 [==============================] - 1015s 819ms/step - loss: 0.0324 - acc: 0.9892 - val_loss: 0.4644 - val_acc: 0.7600
+
+  Epoch 00005: val_loss did not improve from 0.27595
+  Epoch 6/10
+  1240/1240 [==============================] - 1012s 816ms/step - loss: 0.0233 - acc: 0.9923 - val_loss: 0.4008 - val_acc: 0.8528

@@ -1,0 +1,159 @@
+  Epoch 00006: val_loss did not improve from 0.27595
+  Found 39680 images belonging to 2 classes.
+  Found 9921 images belonging to 2 classes.
+  1: input_3
+  2: lambda_3
+  3: block1_conv1
+  4: block1_conv1_bn
+  5: block1_conv1_act
+  6: block1_conv2
+  7: block1_conv2_bn
+  8: block1_conv2_act
+  9: block2_sepconv1
+  10: block2_sepconv1_bn
+  11: block2_sepconv2_act
+  12: block2_sepconv2
+  13: block2_sepconv2_bn
+  14: conv2d_95
+  15: block2_pool
+  16: batch_normalization_95
+  17: add_17
+  18: block3_sepconv1_act
+  19: block3_sepconv1
+  20: block3_sepconv1_bn
+  21: block3_sepconv2_act
+  22: block3_sepconv2
+  23: block3_sepconv2_bn
+  24: conv2d_96
+  25: block3_pool
+  26: batch_normalization_96
+  27: add_18
+  28: block4_sepconv1_act
+  29: block4_sepconv1
+  30: block4_sepconv1_bn
+  31: block4_sepconv2_act
+  32: block4_sepconv2
+  33: block4_sepconv2_bn
+  34: conv2d_97
+  35: block4_pool
+  36: batch_normalization_97
+  37: add_19
+  38: block5_sepconv1_act
+  39: block5_sepconv1
+  40: block5_sepconv1_bn
+  41: block5_sepconv2_act
+  42: block5_sepconv2
+  43: block5_sepconv2_bn
+  44: block5_sepconv3_act
+  45: block5_sepconv3
+  46: block5_sepconv3_bn
+  47: add_20
+  48: block6_sepconv1_act
+  49: block6_sepconv1
+  50: block6_sepconv1_bn
+  51: block6_sepconv2_act
+  52: block6_sepconv2
+  53: block6_sepconv2_bn
+  54: block6_sepconv3_act
+  55: block6_sepconv3
+  56: block6_sepconv3_bn
+  57: add_21
+  58: block7_sepconv1_act
+  59: block7_sepconv1
+  60: block7_sepconv1_bn
+  61: block7_sepconv2_act
+  62: block7_sepconv2
+  63: block7_sepconv2_bn
+  64: block7_sepconv3_act
+  65: block7_sepconv3
+  66: block7_sepconv3_bn
+  67: add_22
+  68: block8_sepconv1_act
+  69: block8_sepconv1
+  70: block8_sepconv1_bn
+  71: block8_sepconv2_act
+  72: block8_sepconv2
+  73: block8_sepconv2_bn
+  74: block8_sepconv3_act
+  75: block8_sepconv3
+  76: block8_sepconv3_bn
+  77: add_23
+  78: block9_sepconv1_act
+  79: block9_sepconv1
+  80: block9_sepconv1_bn
+  81: block9_sepconv2_act
+  82: block9_sepconv2
+  83: block9_sepconv2_bn
+  84: block9_sepconv3_act
+  85: block9_sepconv3
+  86: block9_sepconv3_bn
+  87: add_24
+  88: block10_sepconv1_act
+  89: block10_sepconv1
+  90: block10_sepconv1_bn
+  91: block10_sepconv2_act
+  92: block10_sepconv2
+  93: block10_sepconv2_bn
+  94: block10_sepconv3_act
+  95: block10_sepconv3
+  96: block10_sepconv3_bn
+  97: add_25
+  98: block11_sepconv1_act
+  99: block11_sepconv1
+  100: block11_sepconv1_bn
+  101: block11_sepconv2_act
+  102: block11_sepconv2
+  103: block11_sepconv2_bn
+  104: block11_sepconv3_act
+  105: block11_sepconv3
+  106: block11_sepconv3_bn
+  107: add_26
+  108: block12_sepconv1_act
+  109: block12_sepconv1
+  110: block12_sepconv1_bn
+  111: block12_sepconv2_act
+  112: block12_sepconv2
+  113: block12_sepconv2_bn
+  114: block12_sepconv3_act
+  115: block12_sepconv3
+  116: block12_sepconv3_bn
+  117: add_27
+  118: block13_sepconv1_act
+  119: block13_sepconv1
+  120: block13_sepconv1_bn
+  121: block13_sepconv2_act
+  122: block13_sepconv2
+  123: block13_sepconv2_bn
+  124: conv2d_98
+  125: block13_pool
+  126: batch_normalization_98
+  127: add_28
+  128: block14_sepconv1
+  129: block14_sepconv1_bn
+  130: block14_sepconv1_act
+  131: block14_sepconv2
+  132: block14_sepconv2_bn
+  133: block14_sepconv2_act
+  134: my_global_average_pooling_layer_1
+  135: my_dropout_layer_1
+  136: my_dense_layer_1
+  Epoch 1/10
+  1240/1240 [==============================] - 1118s 902ms/step - loss: 0.1392 - acc: 0.9498 - val_loss: 0.2851 - val_acc: 0.8936
+
+  Epoch 00001: val_loss improved from inf to 0.28512, saving model to ./model/xception-finetune.hdf5
+  Epoch 2/10
+  1240/1240 [==============================] - 1106s 892ms/step - loss: 0.0618 - acc: 0.9795 - val_loss: 0.2780 - val_acc: 0.9039
+
+  Epoch 00002: val_loss improved from 0.28512 to 0.27795, saving model to ./model/xception-finetune.hdf5
+  Epoch 3/10
+  1240/1240 [==============================] - 1108s 894ms/step - loss: 0.0342 - acc: 0.9885 - val_loss: 0.3562 - val_acc: 0.8622
+
+  Epoch 00003: val_loss did not improve from 0.27795
+  Epoch 4/10
+  1240/1240 [==============================] - 1108s 894ms/step - loss: 0.0209 - acc: 0.9932 - val_loss: 0.4390 - val_acc: 0.8657
+
+  Epoch 00004: val_loss did not improve from 0.27795
+  Epoch 5/10
+  1240/1240 [==============================] - 1113s 897ms/step - loss: 0.0149 - acc: 0.9946 - val_loss: 0.6357 - val_acc: 0.8559
+
+  Epoch 00005: val_loss did not improve from 0.27795

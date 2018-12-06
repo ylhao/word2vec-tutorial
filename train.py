@@ -181,8 +181,8 @@ def mergeFinetuneModel():
 
 if __name__ == '__main__':
 
-    #finetuneModel(inception_v3.preprocess_input, InceptionV3, 'inceptionv3', INCEPTIONV3_NO_TRAINABLE_LAYERS)
-    #finetuneModel(resnet50.preprocess_input, ResNet50, 'resnet50', RESNET50_NO_TRAINABLE_LAYERS)
+    finetuneModel(inception_v3.preprocess_input, InceptionV3, 'inceptionv3', INCEPTIONV3_NO_TRAINABLE_LAYERS)
+    finetuneModel(resnet50.preprocess_input, ResNet50, 'resnet50', RESNET50_NO_TRAINABLE_LAYERS)
     finetuneModel(xception.preprocess_input, Xception, 'xception', XCEPTION_NO_TRAINABLE_LAYERS)
     #extractFeatures()
     #mergeFinetuneModel()
