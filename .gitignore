@@ -1,5 +1,4 @@
-model/
-normal/
-malware/
-data/
-imgs/
+.ipynb_checkpoints/
+gensim*
+wiki.zh.word.text
+tf_128*

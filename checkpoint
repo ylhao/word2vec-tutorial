@@ -1,0 +1,2 @@
+model_checkpoint_path: "tf_128"
+all_model_checkpoint_paths: "tf_128"
