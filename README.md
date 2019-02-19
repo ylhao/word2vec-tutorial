@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Word2Vec
 
 训练词向量。
@@ -76,4 +77,3 @@ model.wv.similarity('男人', '女人'):
 - [word2vec原理(一) CBOW与Skip-Gram模型基础](https://www.cnblogs.com/pinard/p/7160330.html)
 - [word2vec原理(二) 基于Hierarchical Softmax的模型](https://www.cnblogs.com/pinard/p/7243513.html)
 - [word2vec原理(三) 基于Negative Sampling的模型](https://www.cnblogs.com/pinard/p/7249903.html)
-
